@@ -1,11 +1,13 @@
-import QuickQt 2.15
+import QtQuick 2.15
 
-Rectangle {
-    id: root
-
+Image {
+    id: backgroundImg
+    source: "images/frame" + currentFrame + ".png"
+    cache: true
+    asynchronous: true
     property int frameCount: 10
     property int currentFrame: 1
-    property int frameDelay: 50
+    property int frameDelay: 50 
 
     Timer {
         id: animTimer
@@ -17,16 +19,10 @@ Rectangle {
         }
     }
 
-    Image {
-        id: backgroundImg
-        anchors.fill: parent
-        source: "images/frame" + currentFrame + ".png"
-    }
-
     Text {
         id: welcomeText
         text: "Welcome, Sensei!"
-        font.pixelSize: 32
+        font.pixelSize: 40
         color: "white"
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
