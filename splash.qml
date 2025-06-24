@@ -1,1 +1,0 @@
-import QuickQt 2.15
