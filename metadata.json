@@ -9,9 +9,9 @@
         ],
         "Category": "",
         "Description": "Splash theme featured Arona",
-        "Id": "Arona-splash",
+        "Id": "arona-splash-theme",
         "License": "GPLv3",
-        "Name": "Arona-splash",
+        "Name": "arona-splash-theme",
         "ServiceTypes": [
             "Plasma/LookAndFeel"
         ],
@@ -19,5 +19,6 @@
         "Website": "https://github.com/Machillka/arona-splash-theme.git"
     },
     "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-Plasma-APIVersion": "2",
     "X-Plasma-MainScript": "defaults"
 }

@@ -1,22 +1,15 @@
 import QtQuick 2.15
 
-Image {
-    id: backgroundImg
-    source: "images/frame" + currentFrame + ".png"
-    cache: true
-    asynchronous: true
-    property int frameCount: 10
-    property int currentFrame: 1
-    property int frameDelay: 50 
+Rectangle {
+    id: root
 
-    Timer {
-        id: animTimer
-        interval: frameDelay
-        running: true
-        repeat: true
-        onTriggered: {
-            currentFrame = (currentFrame % frameCount) + 1
-        }
+    AnimatedImage {
+        id: backgroundImage
+        source: "images/arona.gif"
+        anchors.fill: parent
+        paused: false
+        smooth: true
+        visible: true
     }
 
     Text {
