@@ -21,12 +21,12 @@ Rectangle {
 
     Text {
         id: welcomeText
-        font.pointsize: 50
+        font.pixelSize: 50
         font.bold: true
         font.family: "Noto Sans"
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        anchors.topMargin: 60
+        anchors.topMargin: 70
         color: "white"
         text: fullText.substring(0, Math.floor(currentIndex))
     }
